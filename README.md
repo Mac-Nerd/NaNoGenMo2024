@@ -9,4 +9,6 @@ The text was modified as follows:
 - Extended 8-bit characters (é, æ, etc) replaced by their ASCII equivalents.
 - Newlines were replaced by "@"
 
+I shall call it BashGPT, the sheLLM.
+
 Share and enjoy.
