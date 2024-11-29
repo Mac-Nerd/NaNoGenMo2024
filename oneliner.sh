@@ -1,0 +1,1 @@
+LLMIN="@"; ITER=0; while [ $ITER -lt 50000 ]; do LLMOUT=$(grep -o -E -e "${LLMIN}." CORPUS.txt | shuf -n 1); printf "%s" ${LLMOUT:(-1)} | sed -e 's/\@/\n/g' >> "Frankenstein's Governess.txt"; [[ "${LLMOUT:(-1)}" == " " ]] && ITER=$((ITER+1)); LLMIN=$(echo ${LLMOUT:(-16)} | sed -E -e 's/([?().])/\\\1/g'); done
