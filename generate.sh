@@ -1,4 +1,4 @@
-#!/bin/szh
+#!/bin/zsh
 
 # Abstract out file names:
 CORPUS="CORPUS.txt"
