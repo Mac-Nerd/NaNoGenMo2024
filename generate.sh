@@ -11,7 +11,7 @@ LLMIN="@"
 ITER=0
 
 # Repeat while the wordcount is less than 50,000
-while [ $ITER -lte 50000 ]
+while [ $ITER -le 50000 ]
 do
   # Search the text for the input phrase, plus one additional wildcard character, returning one random result
   LLMOUT=$(grep -o -E -e "${LLMIN}." "$CORPUS" | shuf -n 1)
